@@ -1,8 +1,9 @@
 from enum import Enum, auto
 
 class TextType(Enum):
-    H1 = auto()
-    P = auto()
+    BOLD = 1
+    ITALIC = 2
+    UNDERLINE = 3
     # ...add other text types as needed...
 
 class TextNode:
