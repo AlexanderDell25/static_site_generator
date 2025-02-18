@@ -1,35 +1,24 @@
-from textnode import TextNode, TextType
-
 class HTMLNode(object):
-    def __init__(self, tag, value, children, props):
+    def __init__(self, tag=None, value=None, children=None, props=None):
         self.tag = tag
         self.value = value
-        self.children = children
-        self.props = props
+        self.children = children if children else []
+        self.props = props if props else {}
 
-        if self.tag  == "":
-            self.tag = TextNode("", TextType.NORMAL)
-
-        if self.value == "":
-            self.value = children
-
-        if self.children == None:
-            self.children = value
-
-        if self.props == None:
-            self.tag = ""
-            self.value = ""
-            self.children = []
-            self.props = {}
-
-
-    def to__html(self):
+    def to_html(self):
         raise NotImplementedError
         
     def props_to_html(self):
-        href = self.props.lstrip.get('href')
-        target = self.props.lstrip.get('target')
-        return f"href={href} target={target}"
+        html = "".join(f' {key}="{value}"' for key, value in self.props.items() if value is not None)
+        return html
     
     def __repr__(self):
         return f"HTMLNode({self.tag}, {self.value}, {self.children}, {self.props})"
+    
+    def __eq__(self, other):
+        if isinstance(other, HTMLNode):
+            return (self.tag == other.tag and
+                    self.value == other.value and
+                    self.children == other.children and
+                    self.props == other.props)
+        return False

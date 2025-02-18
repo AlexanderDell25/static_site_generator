@@ -3,7 +3,7 @@ from textnode import TextNode, TextType
 from htmlnode import HTMLNode
 
 def main():
-    text_node = TextNode("Hello, World!", TextType.H1, "https://www.example.com")  # Create a TextNode object
-    print(text_node)  # Output: TextNode(Hello, World!, H1, https://www.example.com)
+    #text_node = TextNode("Hello, World!", TextType.H1, "https://www.example.com")  # Create a TextNode object
+    #print(text_node)  # Output: TextNode(Hello, World!, H1, https://www.example.com)
 
 main()
