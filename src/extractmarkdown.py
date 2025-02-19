@@ -24,5 +24,5 @@ def extract_markdown_links(text):
         link_nodes.append(text_url) # Append the tuple to the list of image nodes
     return link_nodes  # Return the list of image nodes
 
-#print(extract_markdown_images("![Image alt text](https://www.example.com/image.png) and ![Image alt text2](https://www.example2.com/image.png)"))  # Test the function with a sample input
-#print(extract_markdown_links("This is text with a link [to boot dev](https://www.boot.dev) and [to youtube](https://www.youtube.com/@bootdotdev)"))  # Test the function with a sample input
+#print(extract_markdown_images("![Image alt text](https://www.example.com/image.png) and ![Image alt text2](https://www.example2.com/image.png)")) 
+#print(extract_markdown_links("This is text with a link [to boot dev](https://www.boot.dev) and [to youtube](https://www.youtube.com/@bootdotdev)"))  
