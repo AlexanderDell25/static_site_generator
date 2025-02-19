@@ -1,4 +1,4 @@
-import re
+""" import re
 
 def extract_markdown_images(text):
     image_nodes = []  # Initialize an empty list to store the image nodes
@@ -25,4 +25,4 @@ def extract_markdown_links(text):
     return link_nodes  # Return the list of image nodes
 
 #print(extract_markdown_images("![Image alt text](https://www.example.com/image.png) and ![Image alt text2](https://www.example2.com/image.png)")) 
-#print(extract_markdown_links("This is text with a link [to boot dev](https://www.boot.dev) and [to youtube](https://www.youtube.com/@bootdotdev)"))  
+#print(extract_markdown_links("This is text with a link [to boot dev](https://www.boot.dev) and [to youtube](https://www.youtube.com/@bootdotdev)"))   """

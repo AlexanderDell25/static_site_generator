@@ -1,5 +1,5 @@
 import unittest
-from extractmarkdown import extract_markdown_images, extract_markdown_links
+from splitnodesdelimiter import *
 
 class TestExtractMarkdown(unittest.TestCase):
     def test_extract_markdown_images_empty_text(self):

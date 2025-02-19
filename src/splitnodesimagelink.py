@@ -1,4 +1,4 @@
-from htmlnode import TextNode, TextType
+""" from htmlnode import TextNode, TextType
 from extractmarkdown import extract_markdown_links, extract_markdown_images
 
 def split_nodes_image(old_nodes):
@@ -43,4 +43,4 @@ def split_nodes_link(old_nodes):
                 new_nodes.append(TextNode(remaining_text, TextType.TEXT))  # Append any remaining text as a TextNode
         else:
             new_nodes.append(node)  # If the node is not a TextNode or not of type TEXT, append it as is
-    return new_nodes  # Return the list of new nodes
+    return new_nodes  # Return the list of new nodes """
