@@ -1,4 +1,4 @@
-
+from textnode import *
 
 class HTMLNode(object):
     def __init__(self, tag=None, value=None, children=None, props=None):
