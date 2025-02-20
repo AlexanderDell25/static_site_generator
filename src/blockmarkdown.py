@@ -1,5 +1,4 @@
-from enum import Enum, auto
-from textnode import TextNode, TextType
+from enum import Enum
 from splitnodesdelimiter import text_to_text_nodes
 from htmlnode import *
 
