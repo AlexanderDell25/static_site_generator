@@ -3,7 +3,7 @@ import os
 from htmlnode import *
 from textnode import *
 from copystatic import *
-from generatepage import *
+from generatePagesrec import *
 
 def main():
     #text_node = TextNode("Hello, World!", TextType.H1, "https://www.example.com")  # Create a TextNode object
@@ -15,11 +15,11 @@ def main():
     copy_delete_folder(source, destination)
 
     # Generate the index page
-    from_path = "content/index.md"
+    from_path = "content"
     template_path = "template.html"
-    dest_path = "public/index.html"
+    dest_path = "public"
 
-    generate_page(from_path, template_path, dest_path)
+    generate_pages_recursive(from_path, template_path, dest_path)
 
 if __name__ == "__main__":
     main()
